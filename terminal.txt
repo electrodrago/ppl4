@@ -1,0 +1,3 @@
+javac test.java
+java -jar classfileanalyzer.jar  Car.class
+java -jar classfileanalyzer.jar  Vehicle.class
