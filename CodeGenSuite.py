@@ -50,7 +50,7 @@ class TestCodeGen():
 
 class CheckCodeGenSuite(unittest.TestCase):
     def test_int_ast(self):
-        input = Program([ClassDecl(Id('Program'), [MethodDecl(Static(), Id('main'), [], Block([]))])])
+        input = Program([ClassDecl(Id('Program'), [MethodDecl(Static(), Id('main'), [], Block([Return(IntLiteral(1))]))])])
         expect = ''
         self.assertTrue(TestCodeGen.test(input, expect, 1))
 
